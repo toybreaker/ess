@@ -1,8 +1,15 @@
 <footer class="footer">
-  <p>email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   <p>
-    <span>telephone: {{ site.telephone }}</span> -
-    <span>handphone: {{ site.handphone }}</span>
+    <a href="{{ site.google.maps }}">Google Maps Location</a>
+  </p>
+  <p>
+    email: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </p>
+  <p>
+    telephone: {{ site.telephone }}
+  </p>
+  <p>
+    handphone: {{ site.handphone }}
   </p>
   <p> © 2016 {{ site.title_short }}. All rights reserved.</p>
 </footer>
