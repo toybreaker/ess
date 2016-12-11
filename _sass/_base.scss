@@ -1,0 +1,181 @@
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  background-color: $body-color;
+  overflow-x: hidden!important;
+
+  font-family: $base-font;
+  font-size: $base-font-size-tiny;
+  @include media( "screen", ">minWidth") {font-size: $base-font-size-min;}
+  @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1;}
+  @include media( "screen", ">maxWidth") {font-size: $base-font-size-max;}
+
+  line-height: $base-line-height;
+  font-weight: 300;
+
+  //font-family: $base-font;
+}
+
+body {
+  //overflow-x: hidden!important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid lighten($link-color, 30%);
+  strong {
+    color: inherit;
+  }
+  // :focus is linked to :hover for basic accessibility
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid lighten($link-color, 10%);
+  }
+  // `:visited` state is usefull!
+  &:visited {
+    color: lighten($link-color, 30%)!important;
+  }
+}
+
+input,
+textarea,
+button,
+select,
+label,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &:focus { outline: -webkit-focus-ring-color auto 0px; }
+}
+
+p { margin-top: 0; margin-bottom: 1rem; }
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+dt {font-weight: 400;}
+dd {margin-bottom: .5rem;}
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-bottom: 1px solid $black;
+}
+
+
+
+//// Quotes
+blockquote {
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
+  color: #7a7a7a;
+  border-left: .25rem solid ;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+//// All images... hum!
+img {
+  display: block;
+  max-width: 100%;
+  margin: .1rem auto;
+  // opera mini issue here:
+  // border-radius: $border-radius;
+}
+
+
+//// Tables
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid ;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid ;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: white;
+}
+
+.hide {display: none;}
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear: both; }
+
+
+.post-list { list-style-type: none; }
+.post-date { display:none; }
+
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  line-height: 1.25;
+  letter-spacing: -.025rem;
+  text-rendering: optimizeLegibility;
+  //text-transform: capitalize;
+  color: $black;
+  margin-bottom: .5rem;
+}
+h1 {
+  font-size: 1.4rem;
+  line-height: 2;
+  @include media( "screen", ">minWidth") {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+  @include media( "screen", ">bp1Width") {font-size: 1.75rem;}
+  @include media( "screen", ">maxWidth") {font-size: 2rem;}
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.bungkus {
+  height: 100vh;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: none;
+  .about & {
+    max-width: 1000px;
+    margin-top: $vertical-space*2;
+  }
+}

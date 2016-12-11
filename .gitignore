@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-metadata
+.DS_Store
+.workinprogress
+Icon
+_src/
+*.tif
+_input

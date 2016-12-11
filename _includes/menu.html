@@ -1,0 +1,15 @@
+<ul class="menu group">
+
+  {% for menuitem in site.data.menu %}
+    {% if page.url contains menuitem.name %}
+      <li><a href="{{ site.baseurl }}/works/{{work.name}}/" class="active">{{menuitem.name}}</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}/works/{{work.name}}/">{{menuitem.name}}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  <li>
+    <a target="_blank" href="{{site.booking}}">online booking</a>
+  </li>
+
+</ul>

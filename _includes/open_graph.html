@@ -1,0 +1,28 @@
+<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@rokmatwit">
+
+	{% if site.twitter %}
+	<meta name="twitter:creator" content="@{{ owner.twitter }}">
+	{% else %}
+	<meta name="twitter:creator" content="@rokmatwit">
+	{% endif %}
+
+	<meta name="twitter:image:src" content="{{ site.url }}/assets/p/{{ page.hash }}-01-640.jpg">
+	<meta name="twitter:title" content="{{ site.title }} - {{ page.project | upcase }}">
+	<meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncatewords:30 }}">
+
+
+
+<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="it_IT" />
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{ site.title }} - {{ page.project | upcase }}">
+	<meta property="og:image" content="{{ site.url }}/assets/p/{{ page.hash }}-01-640.jpg">
+
+	<meta property="og:description" content="{{ page.content|strip_html|strip_newlines|truncatewords:30 }}">
+
+	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+	<meta property="og:site_name" content="{{ site.title }}">

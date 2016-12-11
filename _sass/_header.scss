@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  a {
+    width: 100%;
+    border-bottom: 0 none;
+    line-height: 1.5;
+    text-align: center;
+    @include media( "screen", ">minWidth") {
+      text-align: left;
+      float: left;
+      width: auto;
+    }
+  }
+}
+.menu {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-top: .75rem;
+  width: 100%;
+  text-align: center;
+  @include media( "screen", ">minWidth"){
+    float: right;
+    width: auto;
+  }
+  li {
+    display: inline;
+    a {
+      margin-right: 2vw;
+      border-bottom: 2px solid transparent;
+    }
+    a.active,
+    a:hover {
+      border-bottom: 2px solid lighten($link-color, 10%);
+    }
+    a:visited {
+      color: lighten($link-color, 30%)!important;
+    }
+  }
+}

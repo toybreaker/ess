@@ -1,0 +1,29 @@
+title: Eat Sleep Skate
+title_short: ESS Bali
+email: essbali2015@gmail.com
+telephone: +62 361 4720185
+handphone: +62 896 18640503
+address:  Jl. Sedap Malam, Gg. Kwangen 13, Banjar Bhuana Anyar, Sumerta Kelod, Denpasar Timur, Bali 80237
+short_address: Jl. Sedap Malam, Gg. Kwangen 13, Banjar Bhuana Anyar, Sanur.
+description: > # this means to ignore newlines until "baseurl:"
+  Wooden chalets, swimming pool, restaurant, and one of the most fun skateboarding bowls in Indonesia. Located 10 minutes from Sanur beach. We designed it all ourselves in harmony with it’s peaceful green environment. Open on weekends 4pm to 10pm. Reserved to our guest for the rest of the time. A place where you can Eat Sleep and Skate.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://essbali.com"
+repository: toybreaker/ess
+instagram: https://www.instagram.com/eatsleepskatebali
+instagram_tag: https://www.instagram.com/explore/tags/essbali
+facebook: https://www.facebook.com/essbali
+twitter: https://twitter.com/essbali
+booking: http://booking.com/e682abb837ed8f61f
+google:
+  analytics:
+  maps: https://goo.gl/maps/pPpJSdKjMsn
+  verification:
+
+# Build settings
+markdown: kramdown
+gems:
+ - jekyll-mentions
+ - jekyll-redirect-from
+ - jekyll-sitemap
+ - jekyll-feed
