@@ -3,6 +3,7 @@ layout: page
 title: About Us
 permalink: /about/
 ---
+### &nbsp;
 
 ## The only bed and breakfast in Bali with its own skatepark!
 
@@ -15,6 +16,8 @@ For nearly 10 years, we had let anyone ride the bowl 4 days a week for free. Tho
 Back then, there was no facility for the public, like bathroom and cold beer, so we decided to make it a one of a kind type of homestay with a restaurant and fast and free WiFi available in all areas. A place where you can Eat Sleep and Skate.
 
 Nowadays, the skatepark is open to public on weekends from 4pm to 10pm. It is reserved to our guest for the rest of the time.
+
+### &nbsp;
 
 ## We're Social
 

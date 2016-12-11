@@ -3,7 +3,7 @@ layout: page
 title: Events
 permalink: /events/
 ---
-
+### &nbsp;
 
 ## Skate School
 
@@ -17,7 +17,7 @@ Event Time: 3:30pm - 6:00pm. Monday to Thursday
 
 Event Location: ESS Bali, Jl. Sedap Malam, Gg. Kwangen No.13, Banjar Bhuana Anyar, Sanur
 
-## &nbsp;
+### &nbsp;
 
 ## Friday Night Pizza
 

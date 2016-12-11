@@ -3,6 +3,7 @@ layout: page
 title: Rooms
 permalink: /rooms/
 ---
+### &nbsp;
 
 ## Barong
 
@@ -14,6 +15,8 @@ Size: 50sqm
 
 View: Garden & swimming pool
 
+### &nbsp;
+
 ## Gladak
 
 A  traditional wooden chalet with terrace overlooking tropical garden and swimming pool, consists of a double bed  and an en suite bathroom with W.C, shower, and basins.
@@ -24,6 +27,7 @@ Size: 35-40sqm / 375-430sqf
 
 View: Garden & swimming pool
 
+### &nbsp;
 
 ## White Gladak
 
@@ -34,6 +38,8 @@ Occupancy: 2
 Size: 35-40sqm / 375-430sqf
 
 View: Garden & swimming pool
+
+### &nbsp;
 
 ## Joglo
 
