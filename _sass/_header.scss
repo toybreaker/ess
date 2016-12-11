@@ -1,5 +1,12 @@
 .header {
   width: 100%;
+  .ess_logo {
+    display: none;
+    @include media( "screen", ">minWidth") {
+      float: left;
+      width: 80px;
+    }
+  }
   a {
     width: 100%;
     border-bottom: 0 none;

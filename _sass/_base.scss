@@ -168,6 +168,8 @@ h4, h5, h6 {
 
 .container {
   margin: 0 auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
   max-width: 1000px;
 }
 
@@ -177,5 +179,19 @@ h4, h5, h6 {
   .about & {
     max-width: 1000px;
     margin-top: $vertical-space*2;
+  }
+}
+
+.center_on_small {
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    text-align: left;
+  }
+}
+
+.hide_on_small {
+  display: none;
+  @include media( "screen", ">bp1Width") {
+    display: inline-block;
   }
 }
