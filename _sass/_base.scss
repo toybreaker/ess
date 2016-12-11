@@ -144,8 +144,8 @@ h1 {
     font-size: 1.5rem;
     line-height: 1.25;
   }
-  @include media( "screen", ">bp1Width") {font-size: 1.75rem;}
-  @include media( "screen", ">maxWidth") {font-size: 2rem;}
+  @include media( "screen", ">bp1Width") {font-size: 1.7rem;}
+  @include media( "screen", ">maxWidth") {font-size: 1.85rem;}
 }
 h2 {
   margin-top: 1rem;
