@@ -22,6 +22,11 @@ google:
   analytics:
   maps: https://goo.gl/maps/pPpJSdKjMsn
   verification:
+# instuff
+userId: '2946518376'
+clientId: 'ec2404a26b26481c93a9b8bd5f24363e'
+cleintSecret: '4a4dfb454ed1434cbb928eb6ea59ba1b'
+accessToken: '2946518376.ec2404a.37bf765fa57343a380feeb950c0d31b6'
 
 # Build settings
 markdown: kramdown

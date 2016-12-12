@@ -1,6 +1,10 @@
 ---
 
 ---
+{% assign instafeed_img = '{{image}}' %}
+{% assign instafeed_link = '{{link}}' %}
+{% assign instafeed_likes = '{{likes}}' %}
+{% assign instafeed_caption = '{{caption}}' %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,6 +46,10 @@
       </div>
 
       <div class="container">
+        <div id="instafeed" class="instagram group"></div>
+      </div>
+
+      <div class="container">
         <div class="box center_on_small">
           {% include svg/use.html id="icn--tripadvisor" class="tripadvisor" %}
           <p>Rated EXCELLENT 4.5 of 5</p>
@@ -61,6 +69,26 @@
       </div>
 
     </div>
+
+
+    <script type="text/javascript" src="/assets/j/instafeed.min.js"></script>
+
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: '{{site.userId}}',
+          accessToken: '{{site.accessToken}}',
+          sortBy: 'most-liked',
+          resolution: 'standard_resolution',
+          links: 'false',
+          target: 'instafeed',
+          template: '<img src="{{instafeed_img}}" />',
+          filter: function(image) {
+            return image.tags.indexOf('{{page.hash}}') >= 0;
+          }
+        });
+      userFeed.run();
+    </script>
 
 
     {% include script_slideshow.html %}
