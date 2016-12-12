@@ -1,3 +1,9 @@
-<div class="skateschool">
-
+<div class="skateschool group">
+  {% for image in site.static_files %}
+    {% if image.path contains 'p/school' %}
+      <figure class="small">
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="Skate School at Eat Sleep Skate Bali" />
+      </figure>
+    {% endif %}
+  {% endfor %}
 </div>

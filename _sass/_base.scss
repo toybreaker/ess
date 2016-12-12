@@ -201,3 +201,48 @@ h4, h5, h6 {
   align-items: center;
   flex-direction: column;
 }
+
+.small {
+  padding-bottom: .75rem;
+  padding-right: .75rem;
+}
+
+.skateschool,
+.pizza{
+  display: flex;
+
+}
+
+.pizza {
+  flex-wrap: wrap;
+  figure {
+    max-width: 320px;
+  }
+}
+.us {
+  figure {
+    max-width: 100%;
+    @include media( "screen", ">minWidth") {
+      max-width: 320px;
+    }
+  }
+}
+
+.events h2,
+.us h2 {
+  margin-top: $vertical-space;
+  margin-bottom: $vertical-space-small;
+}
+.inline {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+  padding-right: .75rem;
+}
+.right {
+  float: right;
+  padding-right: 0;
+  padding-left: .75rem;
+}

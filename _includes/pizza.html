@@ -1,0 +1,9 @@
+<div class="pizza group">
+  {% for image in site.static_files %}
+    {% if image.path contains 'p/pizza' %}
+      <figure class="small ">
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="first Eat some Pizza then Sleep and Skate" />
+      </figure>
+    {% endif %}
+  {% endfor %}
+</div>
