@@ -210,39 +210,69 @@ h4, h5, h6 {
 .skateschool,
 .pizza{
   display: flex;
-
 }
 
 .pizza {
   flex-wrap: wrap;
-  figure {
-    max-width: 320px;
+  @include media( "screen", ">minWidth") {
+    figure { max-width: 50%; }
   }
-}
-.us {
-  figure {
-    max-width: 100%;
-    @include media( "screen", ">minWidth") {
-      max-width: 320px;
-    }
+  @include media( "screen", ">bp1Width") {
+    figure { max-width: 32%; }
   }
 }
 
-.events h2,
-.us h2 {
-  margin-top: $vertical-space;
-  margin-bottom: $vertical-space-small;
+.skateschool {
+  flex-wrap: wrap;
+  @include media( "screen", ">minWidth") {
+    figure { max-width: 50%; }
+  }
+  @include media( "screen", ">bp1Width") {
+    figure { max-width: 24%; }
+  }
+}
+
+.us {
+  flex-wrap: wrap;
+  @include media( "screen", ">minWidth") {
+    figure { max-width: 50%; }
+  }
+}
+
+.events,
+.us {
+   h2 {
+     margin-top: $vertical-space;
+     margin-bottom: $vertical-space-small;
+   }
+   .group {
+     margin-top: $vertical-space-small;
+     margin-bottom: $vertical-space-small;
+   }
 }
 .inline {
   display: inline-block;
 }
 
 .left {
-  float: left;
-  padding-right: .75rem;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+  img { margin: 0;}
+  @include media( "screen", ">minWidth") {
+    float: left;
+    padding-right: .75rem;
+  }
 }
 .right {
-  float: right;
+  float: none;
+  padding-left: 0;
   padding-right: 0;
-  padding-left: .75rem;
+  margin: 0;
+  img { margin: 0;}
+  @include media( "screen", ">minWidth") {
+    float: right;
+    padding-right: 0;
+    padding-left: .75rem;
+  }
 }
