@@ -12,7 +12,7 @@ html {
   background-color: $body-color;
   overflow-x: hidden!important;
 
-  font-family: $base-font;
+  font: $base-font;
   font-size: $base-font-size-tiny;
   @include media( "screen", ">minWidth") {font-size: $base-font-size-min;}
   @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1;}
@@ -21,7 +21,6 @@ html {
   line-height: $base-line-height;
   font-weight: 300;
 
-  //font-family: $base-font;
 }
 
 body {
