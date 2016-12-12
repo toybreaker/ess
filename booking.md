@@ -15,8 +15,7 @@ Your can quickly [check availability and book online]({{site.booking}})
 
 ### Checking In and Out
 
-*Check In Time 14.00*
-
+*Check In Time 14.00*  
 *Check Out Time 12.00*
 
 If you want to continue using the room after checkout time because of an evening - or night flight, this might be possible depending on occupancy. Please consult our management about this. This is free of charge until 16:00.
