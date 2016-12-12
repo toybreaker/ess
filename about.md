@@ -5,9 +5,9 @@ permalink: /about/
 ---
 ### &nbsp;
 
-## The only bed and breakfast in Bali with its own skatepark!
+## The first bed and breakfast in Bali with its own skatepark!
 
-Consisting of 4 different types of traditional wooden chalets, a swimming pool, a dining/lounge area, and one of the most fun skateboarding bowls in Indonesia. [Located 10 minutes from Sanur]({{site.ggogle.maps}}) east coast beaches, in the old gardens of the Kesiman Royal Family.
+Consisting of 4 different types of traditional wooden chalets, a swimming pool, a dining/lounge area, and one of the most fun skateboarding bowls in Indonesia. [Located 10 minutes from Sanur]({{site.google.maps}}) east coast beaches, in the old gardens of the Kesiman Royal Family.
 
 We designed it all ourselves in harmony with it’s peaceful green environment. The traditional atmosphere still fills the air today, with only the sound of birds and breeze blowing through the trees. It’s a very special place.
 
