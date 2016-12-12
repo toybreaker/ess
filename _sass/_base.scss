@@ -201,15 +201,22 @@ h4, h5, h6 {
   align-items: center;
   flex-direction: column;
 }
-
 .small {
   padding-bottom: .75rem;
+  padding-right: 0;
+}
+
+.events .small {
   padding-right: .75rem;
+  @include media( "screen", ">bp1Width") {
+    padding-right: 0;
+  }
 }
 
 .skateschool,
 .pizza{
   display: flex;
+  justify-content: space-between;
 }
 
 .pizza {
@@ -234,9 +241,6 @@ h4, h5, h6 {
 
 .us {
   flex-wrap: wrap;
-  @include media( "screen", ">minWidth") {
-    figure { max-width: 50%; }
-  }
 }
 
 .events,
@@ -244,6 +248,7 @@ h4, h5, h6 {
    h2 {
      margin-top: $vertical-space;
      margin-bottom: $vertical-space-small;
+     text-align: center;
    }
    .group {
      margin-top: $vertical-space-small;
@@ -255,24 +260,30 @@ h4, h5, h6 {
 }
 
 .left {
-  float: none;
-  padding-left: 0;
+  padding-right: 1rem;
   padding-right: 0;
-  img { margin: 0;}
-  @include media( "screen", ">minWidth") {
-    float: left;
-    padding-right: .75rem;
+  @include media( "screen", ">bp1Width") {
+      padding-right: 1rem;
   }
 }
 .right {
-  float: none;
+  order: 2;
   padding-left: 0;
-  padding-right: 0;
-  margin: 0;
-  img { margin: 0;}
-  @include media( "screen", ">minWidth") {
-    float: right;
-    padding-right: 0;
-    padding-left: .75rem;
+  @include media( "screen", ">bp1Width") {
+      padding-left: 1rem;
+  }
+}
+
+.flex {
+  width: 100%;
+  img { width: 100%; }
+  @include media( "screen", ">bp1Width") {
+    img { width: auto; }
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    p {
+      max-width: 50%;
+    }
   }
 }
