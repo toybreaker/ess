@@ -286,4 +286,18 @@ h4, h5, h6 {
       max-width: 50%;
     }
   }
+  .rooms & {
+    figure {
+      padding-left: 1rem;
+      &:first-child { padding-left: 0;}
+    }
+  }
+}
+
+.white-gladak.flex {
+  flex-wrap: wrap;
+  figure {
+    max-width: 320px;
+    &:first-child { padding-left: 1rem;}
+  }
 }
