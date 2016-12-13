@@ -12,138 +12,136 @@
 
     <div class="bungkus group">
 
-      <div class="container">
+      {% include header.html %}
 
-        {% include header.html %}
+      <div class="container content">
 
-      </div>
+        <div class="booking">
 
-      <div class="container booking">
+            <a class="no_underline" href="http://booking.com/e682abb837ed8f61f">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="bookingdotcom">
+                <use xlink:href="#icn--bookingdotcom"></use>
+              </svg>
+            </a>
+            <a class="floatleft" href="http://booking.com/e682abb837ed8f61f">Check availability and place your booking.</a>
 
-          <a class="no_underline" href="http://booking.com/e682abb837ed8f61f">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="bookingdotcom">
-              <use xlink:href="#icn--bookingdotcom"></use>
-            </svg>
-          </a>
-          <a class="floatleft" href="http://booking.com/e682abb837ed8f61f">Check availability and place your booking.</a>
-
-      </div>
-
-      <div class="container">
-
-        <h2 id="barong">Barong</h2>
-
-        <div class="barong flex">
-          {% for image in site.static_files %}
-            {% if image.path contains 'barong' %}
-              <figure class="small ">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="Barong room at Eat Sleep Skate Bali" />
-              </figure>
-            {% endif %}
-          {% endfor %}
         </div>
 
-        <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, 2 double beds and an en-suite bathroom with W.C, shower, and double basins. Perfect for small families or 2 couples.</p>
+        <div class="roomsdetails">
 
-        <p><em>Occupancy:</em> 4</p>
+          <h2 id="barong">Barong</h2>
 
-        <p><em>Size:</em> 50sqm</p>
+          <div class="barong flex">
+            {% for image in site.static_files %}
+              {% if image.path contains 'barong' %}
+                <figure class="small ">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Barong room at Eat Sleep Skate Bali" />
+                </figure>
+              {% endif %}
+            {% endfor %}
+          </div>
 
-        <p><em>View:</em> Garden and Swimming pool</p>
+          <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, 2 double beds and an en-suite bathroom with W.C, shower, and double basins. Perfect for small families or 2 couples.</p>
 
-        <h2 id="gladak">Gladak</h2>
+          <p><em>Occupancy:</em> 4</p>
 
-        <div class="gladak flex">
-          {% for image in site.static_files %}
-            {% if image.path contains 'brown-gladak' %}
-              <figure class="small ">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="Gladak room at Eat Sleep Skate Bali" />
-              </figure>
-            {% endif %}
-          {% endfor %}
+          <p><em>Size:</em> 50sqm</p>
+
+          <p><em>View:</em> Garden and Swimming pool</p>
+
+          <h2 id="gladak">Gladak</h2>
+
+          <div class="gladak flex">
+            {% for image in site.static_files %}
+              {% if image.path contains 'brown-gladak' %}
+                <figure class="small ">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Gladak room at Eat Sleep Skate Bali" />
+                </figure>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, a double bed and an en-suite bathroom with W.C, shower, and basins.</p>
+
+          <p><em>Occupancy:</em> 2</p>
+
+          <p><em>Size:</em> 35-40sqm / 375-430sqf</p>
+
+          <p><em>View:</em> Garden and Swimming pool</p>
+
+
+          <h2 id="white-gladak">White Gladak</h2>
+
+          <div class="white-gladak flex">
+            {% for image in site.static_files %}
+              {% if image.path contains 'white-gladak' %}
+                <figure class="small ">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="White Gladak room at Eat Sleep Skate Bali" />
+                </figure>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, with 2 twin beds and an en-suite bathroom with W.C, shower, and basins.</p>
+
+          <p><em>Occupancy:</em> 2</p>
+
+          <p><em>Size:</em> 35-40sqm / 375-430sqf</p>
+
+          <p><em>View:</em> Garden and Swimming pool</p>
+
+          <h2 id="joglo">Joglo</h2>
+
+          <div class="joglo flex">
+            {% for image in site.static_files %}
+              {% if image.path contains 'joglo' %}
+                <figure class="small ">
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Joglo room at Eat Sleep Skate Bali" />
+                </figure>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, a double bed, a sofa/daybed and an en suite bathroom with W.C, shower, and double basins. Perfect for 1 person.</p>
+
+          <p><em>Occupancy:</em> 3</p>
+
+          <p><em>Size:</em> 50sqm / 162sqf</p>
+
+          <p><em>View:</em> Garden and Swimming pool</p>
         </div>
 
-        <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, a double bed and an en-suite bathroom with W.C, shower, and basins.</p>
+        <div class="details">
 
-        <p><em>Occupancy:</em> 2</p>
+          <h2 id="checking-in-and-out">Checking In and Out</h2>
 
-        <p><em>Size:</em> 35-40sqm / 375-430sqf</p>
+          <p>
+            <em>Check In Time:</em> 14.00
+            <br>
+            <em>Check Out Time:</em> 12.00
+          </p>
 
-        <p><em>View:</em> Garden and Swimming pool</p>
+          <p>Want to continue using the room after checkout time because of an evening - or night flight? This might be possible depending on occupancy. Please consult our management. It will be free of charge until 16:00.</p>
+
+          <p>After 16:00, the full room rate will be charged. In all cases your luggage can be safely stored and all facilities can be freely used.</p>
 
 
-        <h2 id="white-gladak">White Gladak</h2>
+          <h2 id="deposit-and-payment-policy">Deposit and Payment Policy</h2>
 
-        <div class="white-gladak flex">
-          {% for image in site.static_files %}
-            {% if image.path contains 'white-gladak' %}
-              <figure class="small ">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="White Gladak room at Eat Sleep Skate Bali" />
-              </figure>
-            {% endif %}
-          {% endfor %}
+          <p>We do not require a deposit, only a booking guarantee. The credit card details, you are asked to enter during the booking procedure, are used for the booking guarantee. Nothing will charged to your account at the booking stage however. Full payment will happen at check-out at the resort. We accept Visa, MasterCard or cash payment.</p>
+
+          <p>Room rates are subject to change without prior notification, confirmed reservations will not be affected.</p>
+
+          <h2 id="cancellation-policy">Cancellation Policy</h2>
+
+          <p>Free cancellation must be received within 14 days, or more, prior to arrival (depending on the rate plan booked). If the reservation is cancelled closer to the arrival date, 100% of the first night will be charged (depending on the rate plan booked). In case of a no-show, a cancellation fee, equal to the number of nights cancelled, will be charged.</p>
+
+
         </div>
 
-        <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, with 2 twin beds and an en-suite bathroom with W.C, shower, and basins.</p>
-
-        <p><em>Occupancy:</em> 2</p>
-
-        <p><em>Size:</em> 35-40sqm / 375-430sqf</p>
-
-        <p><em>View:</em> Garden and Swimming pool</p>
-
-        <h2 id="joglo">Joglo</h2>
-
-        <div class="joglo flex">
-          {% for image in site.static_files %}
-            {% if image.path contains 'joglo' %}
-              <figure class="small ">
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="Joglo room at Eat Sleep Skate Bali" />
-              </figure>
-            {% endif %}
-          {% endfor %}
-        </div>
-
-        <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, a double bed, a sofa/daybed and an en suite bathroom with W.C, shower, and double basins. Perfect for 1 person.</p>
-
-        <p><em>Occupancy:</em> 3</p>
-
-        <p><em>Size:</em> 50sqm / 162sqf</p>
-
-        <p><em>View:</em> Garden and Swimming pool</p>
       </div>
 
-      <div class="container">
-
-        <h2 id="checking-in-and-out">Checking In and Out</h2>
-
-        <p>
-          <em>Check In Time:</em> 14.00
-          <br>
-          <em>Check Out Time:</em> 12.00
-        </p>
-
-        <p>Want to continue using the room after checkout time because of an evening - or night flight? This might be possible depending on occupancy. Please consult our management. It will be free of charge until 16:00.</p>
-
-        <p>After 16:00, the full room rate will be charged. In all cases your luggage can be safely stored and all facilities can be freely used.</p>
-
-
-        <h2 id="deposit-and-payment-policy">Deposit and Payment Policy</h2>
-
-        <p>We do not require a deposit, only a booking guarantee. The credit card details, you are asked to enter during the booking procedure, are used for the booking guarantee. Nothing will charged to your account at the booking stage however. Full payment will happen at check-out at the resort. We accept Visa, MasterCard or cash payment.</p>
-
-        <p>Room rates are subject to change without prior notification, confirmed reservations will not be affected.</p>
-
-        <h2 id="cancellation-policy">Cancellation Policy</h2>
-
-        <p>Free cancellation must be received within 14 days, or more, prior to arrival (depending on the rate plan booked). If the reservation is cancelled closer to the arrival date, 100% of the first night will be charged (depending on the rate plan booked). In case of a no-show, a cancellation fee, equal to the number of nights cancelled, will be charged.</p>
-
-
-      </div>
-
-      <div class="container">
-        {% include footer.html %}
-      </div>
+      {% include footer.html %}
 
     </div>
 

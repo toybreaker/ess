@@ -1,12 +1,29 @@
-:not(.container.booking) svg {
+// svg:not(.bookingdotcom){
+//
+//   margin-right: 1rem;
+//
+// }
+
+.footer svg {
+  position: static;
   width: 30px;
   height: 30px;
   margin-right: 1rem;
-  position: relative;
-  top:.5rem;
-  .footer & {
-    position: static;
-  }
 }
 
-.header svg {}
+.bookingdotcom {
+  width: 200px;
+  height: 70px;
+}
+
+.tripadvisor {
+  height: 120px;
+  margin-bottom: 1rem;
+}
+.event_time svg,
+.event_location svg{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top:.5rem;
+}

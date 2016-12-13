@@ -12,17 +12,13 @@
 
     <div class="bungkus group">
 
-      <div class="container">
+      {% include header.html %}
 
-        {% include header.html %}
-
-      </div>
-
-      <div class="container">
+      <div class="container content">
 
         <h2 id="skate-school">Skate School</h2>
 
-        <p>Private skate lessons for beginners and intermediate with experienced instructor.</p>
+        <p>Private skate lessons for beginners and intermediate with experienced instructors.</p>
 
         {% include skateschool.html %}
 
@@ -30,13 +26,13 @@
 
         <p>Members get free access to weekend sessions!</p>
 
-        <p>
+        <p class="event_time">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
             <use xlink:href="#icn--clock"></use>
           </svg>
           3:30pm - 6:00pm. Monday to Thursday</p>
 
-        <p>
+        <p class="event_location">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
             <use xlink:href="#icn--location"></use>
           </svg>
@@ -48,13 +44,13 @@
 
         {% include pizza.html %}
 
-        <p>
+        <p class="event_time">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
             <use xlink:href="#icn--clock"></use>
           </svg>
           6pm - 10pm</p>
 
-        <p>
+        <p class="event_location">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
             <use xlink:href="#icn--location"></use>
           </svg>
@@ -62,9 +58,7 @@
 
       </div>
 
-      <div class="container">
-        {% include footer.html %}
-      </div>
+      {% include footer.html %}
 
     </div>
 
