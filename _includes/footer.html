@@ -1,15 +1,31 @@
 <footer class="footer">
-  <p>
-    <a href="{{ site.google.maps }}">GOOGLE MAPS LOCATION</a>
-  </p>
-  <p>
-    EMAIL: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-  </p>
-  <p>
-    TELEPHONE: {{ site.telephone }}
-  </p>
-  <p>
-    HANDPHONE + WhatsApp: {{ site.handphone }}
-  </p>
-  <p> © 2016 {{ site.title_short }}. All rights reserved.</p>
+  <div class="container">
+    <div class="inner">
+      <p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
+          <use xlink:href="#icn--location"></use>
+        </svg>
+        <a href="{{ site.google.maps }}">GOOGLE MAPS LOCATION</a>
+      </p>
+      <p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="email">
+          <use xlink:href="#icn--email"></use>
+        </svg>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+      <p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="localphone">
+          <use xlink:href="#icn--localphone"></use>
+        </svg>
+        {{ site.telephone }}
+      </p>
+      <p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="handphone">
+          <use xlink:href="#icn--handphone"></use>
+        </svg>
+        {{ site.handphone }}
+      </p>
+      <p> © 2016 {{ site.title_short }}. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
