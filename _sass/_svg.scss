@@ -1,9 +1,3 @@
-// svg:not(.bookingdotcom){
-//
-//   margin-right: 1rem;
-//
-// }
-
 .footer svg {
   position: static;
   width: 30px;
@@ -21,9 +15,14 @@
   margin-bottom: 1rem;
 }
 .event_time svg,
-.event_location svg{
+.event_location svg,
+.bookingdetails svg{
   width: 30px;
   height: 30px;
   position: relative;
   top:.5rem;
+}
+
+.bookingdetails svg{
+
 }
