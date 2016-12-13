@@ -181,12 +181,25 @@ h4, h5, h6 {
   padding-right: .75rem;
   max-width: 1000px;
   &.booking{
+    @include media( "screen", ">minWidth") {
+      margin-top: $vertical-space;
+    }
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     > * {
       margin-left: .5rem;
       margin-right: .5rem;
+    }
+    svg {
+      height: 40px;
+      @include media( "screen", ">minWidth") {
+        margin-top: $vertical-space-small/2;
+      }
+      @include media( "screen", ">bp1Width") {
+        height: 100px;
+      }
     }
   }
 }
