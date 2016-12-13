@@ -4,7 +4,7 @@
   margin-bottom: .5rem;
   h1 {
     line-height: 1;
-    padding-top: 10px;
+    padding-top: 3px;
     @include media( "screen", ">bp1Width") {
       line-height: 2;
       white-space: nowrap;
