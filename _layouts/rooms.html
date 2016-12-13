@@ -19,7 +19,91 @@
       </div>
 
       <div class="container">
-        {{ content }}
+
+        <h2 id="barong">Barong</h2>
+
+        <div class="barong flex">
+          {% for image in site.static_files %}
+            {% if image.path contains 'barong' %}
+              <figure class="small ">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Barong room at Eat Sleep Skate Bali" />
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <p>A  traditional wooden house with terrace overlooking tropical garden and swimming pool, consists 2 double beds and an en suite bathroom with W.C, shower, and double basins.  Perfect for small families or 2 couples.</p>
+
+        <p>Occupancy: 4</p>
+
+        <p>Size: 50sqm</p>
+
+        <p>View: Garden &amp; swimming pool</p>
+
+        <h3 id="nbsp-1"> </h3>
+
+        <h2 id="gladak">Gladak</h2>
+
+        <div class="gladak flex">
+          {% for image in site.static_files %}
+            {% if image.path contains 'gladak' %}
+              <figure class="small ">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Gladak room at Eat Sleep Skate Bali" />
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <p>A  traditional wooden chalet with terrace overlooking tropical garden and swimming pool, consists of a double bed  and an en suite bathroom with W.C, shower, and basins.</p>
+
+        <p>Occupancy: 2</p>
+
+        <p>Size: 35-40sqm / 375-430sqf</p>
+
+        <p>View: Garden &amp; swimming pool</p>
+
+
+        <h2 id="white-gladak">White Gladak</h2>
+
+        <div class="white-gladak flex">
+          {% for image in site.static_files %}
+            {% if image.path contains 'white-gladak' %}
+              <figure class="small ">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="White Gladak room at Eat Sleep Skate Bali" />
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, consists 2 twin beds and an en suite bathroom with W.C, shower, and basins.</p>
+
+        <p>Occupancy: 2</p>
+
+        <p>Size: 35-40sqm / 375-430sqf</p>
+
+        <p>View: Garden &amp; swimming pool</p>
+
+        <h3 id="nbsp-3"> </h3>
+
+        <h2 id="joglo">Joglo</h2>
+
+        <div class="joglo flex">
+          {% for image in site.static_files %}
+            {% if image.path contains 'joglo' %}
+              <figure class="small ">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Joglo room at Eat Sleep Skate Bali" />
+              </figure>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <p>A  traditional wooden house with terrace overlooking tropical garden and swimming pool, consists of a double bed and a sofa/daybed comfortable for 1 person to sleep , and an en suite bathroom with W.C, shower, and double basins.</p>
+
+        <p>Occupancy: 3</p>
+
+        <p>Size: 50sqm / 162sqf</p>
+
+        <p>View: Garden / Swimming pool</p>
       </div>
 
       <div class="container">
