@@ -1,4 +1,8 @@
 em { color: lighten($black, 40%);}
+.header .no_underline {
+  border: 0 none!important;
+  text-decoration: none;
+}
 .box {
   display: flex;
   justify-content: center;
