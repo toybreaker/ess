@@ -224,6 +224,7 @@ h4, h5, h6 {
   @include media( "screen", ">minWidth") {
     text-align: left;
   }
+  p {text-align: center;}
 }
 
 .hide_on_small {
