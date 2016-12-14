@@ -1,31 +1,66 @@
+<!-- 
+<h2 class="text_centered group footer_catch_phrase">
+  <br>
+  The first bed and breakfast in Bali with its own skatepark!
+</h2> -->
+
 <footer class="footer">
   <div class="container">
     <div class="inner">
-      <p>
+
+      <p class="resto_hours_paragraph">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
+          <use xlink:href="#icn--clock"></use>
+        </svg>
+        <a href="{{ site.google.maps }}">
+          <span>Eating 9am > 9pm</span>
+          </a>
+      </p>
+      <p class="bowl_hours_paragraph">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
+          <use xlink:href="#icn--clock"></use>
+        </svg>
+        <a href="{{ site.google.maps }}">
+          <span>Skateboarding 3pm > 9pm</span>
+          </a>
+      </p>
+
+      <p class="location_paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
           <use xlink:href="#icn--location"></use>
         </svg>
-        <a href="{{ site.google.maps }}">GOOGLE MAPS LOCATION</a>
+        <a href="{{ site.google.maps }}">
+          <span>Map ESS Skate Bowl!</span>
+          </a>
       </p>
-      <p>
+
+      <p class="email_paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="email">
           <use xlink:href="#icn--email"></use>
         </svg>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="mailto:{{ site.email }}">
+          <span>{{ site.email }}</span>
+        </a>
       </p>
-      <p>
+
+      <p class="localphone_paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="localphone">
           <use xlink:href="#icn--localphone"></use>
         </svg>
-        {{ site.telephone }}
+        <span>{{ site.telephone }}</span>
       </p>
-      <p>
+      <p class="handphone_paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="handphone">
           <use xlink:href="#icn--handphone"></use>
         </svg>
-        {{ site.handphone }}
+        <span>{{ site.handphone }}</span>
       </p>
-      <p> © 2016 {{ site.title_short }}. All rights reserved.</p>
+      <p class="copyright_paragraph">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="empty">
+          <use xlink:href="#icn--empty"></use>
+        </svg>
+        <span>© 2016 {{ site.title_short }}</span>
+      </p>
     </div>
   </div>
 </footer>

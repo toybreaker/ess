@@ -1,10 +1,19 @@
+
+
 .footer {
+  background-image: url(/assets/p/t2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   display: block;
-  font-size: 90%;
   width: 100%;
   padding-top: $vertical-space*2;
   padding-bottom: $vertical-space;
   text-align: center;
+  min-height: 100vh;
+  // @include media( "screen", ">maxWidth") {
+  //   min-height: 90vh;
+  // }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,5 +43,10 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    span {
+      padding: 3px;
+      border-radius: 3px;
+      background-color: white;
+    }
   }
 }
