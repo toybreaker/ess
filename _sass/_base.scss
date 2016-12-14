@@ -1,7 +1,5 @@
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,7 +23,7 @@ html {
 }
 
 body {
-  //overflow-x: hidden!important;
+  /*overflow-x: hidden!important;*/
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -38,12 +36,12 @@ a:not(.no_underline) {
   strong {
     color: inherit;
   }
-  // :focus is linked to :hover for basic accessibility
+  /* :focus is linked to :hover for basic accessibility*/
   &:hover,
   &:focus {
     border-bottom: 2px solid lighten($link-color, 10%);
   }
-  // `:visited` state is usefull!
+  /* `:visited` state is usefull!*/
   &:visited {
     color: lighten($link-color, 30%)!important;
   }
@@ -85,7 +83,7 @@ hr {
 
 
 
-//// Quotes
+/*// Quotes*/
 blockquote {
   padding: 0;
   padding-left: 1rem;
@@ -98,17 +96,17 @@ blockquote {
 }
 
 
-//// All images... hum!
+/*// All images... hum!*/
 img {
   display: block;
   max-width: 100%;
   margin: .1rem auto;
-  // opera mini issue here:
-  // border-radius: $border-radius;
+  /* opera mini issue here:*/
+  /* border-radius: $border-radius;*/
 }
 
 
-//// Tables
+/*// Tables*/
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -136,13 +134,13 @@ tbody tr:nth-child(odd) th {
 .post-date { display:none; }
 
 
-// Headings
+/* Headings*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.25;
   letter-spacing: -.025rem;
   text-rendering: optimizeLegibility;
-  //text-transform: capitalize;
+  /*text-transform: capitalize;*/
   color: $black;
   margin-bottom: .5rem;
 }
@@ -184,9 +182,16 @@ h4, h5, h6 {
     @include media( "screen", ">minWidth") {
       margin-top: $vertical-space;
     }
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     > * {
       margin-left: .5rem;

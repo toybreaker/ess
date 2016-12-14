@@ -37,7 +37,7 @@
 
 
 
-// ------ INDICATORS ------
+/* ------ INDICATORS ------*/
 .slideshow-indicators {
   position: absolute;
   bottom: 5px;
@@ -99,13 +99,13 @@
 
 
 
-// ------ PLAY/PAUSE & NAV BUTTONS ------
+/* ------ PLAY/PAUSE & NAV BUTTONS ------*/
 .slideshow-play-btn, .slideshow-nav-btn {
   display: block;
   position: absolute;
   top: 50%!important;
   padding: 0;
-  // background-color: rgba(20,20,20,0.4);
+  /* background-color: rgba(20,20,20,0.4);*/
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -118,13 +118,13 @@
   }
   &:not(.slideshow-bottom):hover, &:not(.slideshow-bottom):focus {
     background-color: transparent;
-    // background-color: rgba(20,20,20,0.75);
+    /* background-color: rgba(20,20,20,0.75);*/
   }
 }
 
 
 
-// ------ PLAY/PAUSE BUTTON ------
+/* ------ PLAY/PAUSE BUTTON ------*/
 .slideshow-play-btn {
   width: 39px;
   height: 39px;
@@ -205,7 +205,7 @@
 
 
 
-// ------ NAV ARROWS ------
+/* ------ NAV ARROWS ------*/
 .slideshow-nav-btn {
   height: 55px;
   width: 40px;
@@ -275,7 +275,7 @@
   }
 }
 
-// 
-// .demo {
-//   height:50%;
-// }
+/* */
+/* .demo {*/
+/*   height:50%;*/
+/* }*/
