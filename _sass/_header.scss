@@ -12,11 +12,11 @@
   }
   .ess_logo {
     width: 100%;
-    height: 80px;
+    height: 100px;
     @include media( "screen", ">minWidth") {
       display: inline;
       float: left;
-      width: 80px;
+      width: 100px;
       margin-right: 10px;
     }
   }
