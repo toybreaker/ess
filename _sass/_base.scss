@@ -11,9 +11,9 @@ html {
   overflow-x: hidden!important;
 
   // Used as a fallback:
-  font-family: "Helvetica Neue", sans-serif;
-  // Set everything to use the system font:
-  font: caption;
+  font-family: sans-serif;
+  // // Set everything to use the system font:
+  // font: caption;
 
   font-size: $base-font-size-tiny;
   @include media( "screen", ">minWidth") {font-size: $base-font-size-min;}
