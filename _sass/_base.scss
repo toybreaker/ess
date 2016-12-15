@@ -10,11 +10,7 @@ html {
   background-color: $body-color;
   overflow-x: hidden!important;
 
-  /* Used as a fallback:*/
   font-family: sans-serif;
-  /* Set everything to use the system font:*/
-  /* font: caption;*/
-
   font-size: $base-font-size-tiny;
   @include media( "screen", ">minWidth") {font-size: $base-font-size-min;}
   @include media( "screen", ">bp1Width") {font-size: $base-font-size-bp1;}
@@ -66,8 +62,12 @@ a {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: .25rem;
+  margin-left: .25rem;
+  @include media( "screen", ">minWidth") {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
 }
 
 
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   /*text-transform: capitalize;*/
   color: $black;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 h1 {
   font-size: 1.4rem;

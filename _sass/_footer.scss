@@ -1,21 +1,10 @@
-
-
 .footer {
-  // background-image: url(/assets/p/t2.png);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: top center;
   background-color: rgba(0,0,0,.1);
   display: block;
   width: 100%;
-  padding-top: $vertical-space*2;
-  padding-bottom: $vertical-space;
   text-align: center;
-  min-height: 100vh;
-  // @include media( "screen", ">maxWidth") {
-  //   min-height: 90vh;
-  // }
   .container {
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,17 +26,12 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start;
-    // span {
-    //   padding: 3px;
-    //   border-radius: 3px;
-    //   background-color: white;
-    // }
+            justify-content: flex-start;
   }
 }
