@@ -1,3 +1,4 @@
+__LAB
 _site
 .sass-cache
 .jekyll-metadata
@@ -7,3 +8,5 @@ Icon
 _src/
 *.tif
 _input
+
+_data/payoffs.csv

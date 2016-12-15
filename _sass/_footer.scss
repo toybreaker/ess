@@ -1,10 +1,11 @@
 
 
 .footer {
-  background-image: url(/assets/p/t2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  // background-image: url(/assets/p/t2.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  background-color: rgba(0,0,0,.1);
   display: block;
   width: 100%;
   padding-top: $vertical-space*2;
@@ -43,10 +44,10 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    span {
-      padding: 3px;
-      border-radius: 3px;
-      background-color: white;
-    }
+    // span {
+    //   padding: 3px;
+    //   border-radius: 3px;
+    //   background-color: white;
+    // }
   }
 }

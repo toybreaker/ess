@@ -1,10 +1,10 @@
 ---
 
 ---
-{% assign instafeed_img = '{{image}}' %}
+<!-- {% assign instafeed_img = '{{image}}' %}
 {% assign instafeed_link = '{{link}}' %}
 {% assign instafeed_likes = '{{likes}}' %}
-{% assign instafeed_caption = '{{caption}}' %}
+{% assign instafeed_caption = '{{caption}}' %} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,31 +19,38 @@
       {% include header.html %}
 
       <div class="imagecontent">
-
+        {% comment %}
+        from:
+        http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
+        {% endcomment %}
         <div class="slideshow demo">
-          <div class="slideshow-slide-list">
 
-          {% comment %}
-          from:
-          http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
-          {% endcomment %}
+          <div class="slideshow-slide-list">
 
             {% for image in site.static_files %}
               {% if image.path contains 'p/home' %}
                 <figure class="slideshow-slide">
                   <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+                  <!-- {% for payoff in site.data.payoffs %}
+                    <figcaption>{{payoff.txt}}</figcaption>
+                  {% endfor %} -->
+
                 </figure>
               {% endif %}
             {% endfor %}
 
           </div>
+
+
+
         </div>
 
       </div>
 
       <div class="container content">
 
-        <div id="instafeed" class="instagram group"></div>
+        <!-- <div id="instafeed" class="instagram group"></div> -->
 
         <div class="box center_on_small">
           {% include svg/use.html id="icn--tripadvisor" class="tripadvisor" %}
@@ -64,9 +71,9 @@
 
     </div>
 
-    <script type="text/javascript" src="{{ "/assets/j/instafeed.min.js" | prepend: site.url }}"></script>
+    <!-- <script type="text/javascript" src="{{ "/assets/j/instafeed.min.js" | prepend: site.url }}"></script> -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var userFeed = new Instafeed({
           get: 'user',
           userId: '{{site.userId}}',
@@ -82,7 +89,7 @@
           }
         });
       userFeed.run();
-    </script>
+    </script> -->
 
 
     {% include script_slideshow.html %}
