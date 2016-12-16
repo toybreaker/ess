@@ -120,11 +120,10 @@ em { color: lighten($black, 40%);}
   figure {
     padding-left: 0;
     @include media( "screen", ">bp1Width") {
-      max-width: 49%;
-      /* &:first-child { padding-left: 1rem;}*/
+      width: 49%;
     }
     @include media( "screen", ">maxWidth") {
-      max-width: 32%;
+      width: 32%;
     }
   }
 }
