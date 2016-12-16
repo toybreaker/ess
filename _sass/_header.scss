@@ -4,9 +4,12 @@
   margin-bottom: .5rem;
   .container {
     @include media( "screen", ">bp1Width"){
+      display: -webkit-box;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+              justify-content: space-between;
     }
   }
   h1 {
@@ -15,11 +18,14 @@
     margin: 0;
     padding: 0;
   }
-  .logoblock {//a
+  .logoblock {/*a*/
     @include media( "screen", ">minWidth") {
+      display: -webkit-box;
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+              justify-content: flex-start;
       h1 {
         width: 100px;
       }
@@ -36,7 +42,7 @@
       float: left;
     }
   }
-  .ess_logo {//svg
+  .ess_logo {/*svg*/
     width: 100%;
     height: 90px;
     @include media( "screen", ">minWidth") {
@@ -59,9 +65,12 @@
   @include media( "screen", ">minWidth") {
     padding-top: 1rem;
     margin: 0;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+            justify-content: flex-end;
   }
   @include media( "screen", ">bp1Width"){
     margin: 0;
