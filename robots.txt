@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+
+Disallow: *.zip
+Disallow: *.psd
+Disallow: *.tif
+Disallow: *.psd
+
+
+User-agent: Semalt
+Disallow: /
