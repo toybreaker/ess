@@ -10,7 +10,7 @@ short_address: Jl. Sedap Malam, Gg. Kwangen 13, Banjar Bhuana Anyar, Sanur.
 description: > # this means to ignore newlines until "baseurl:"
   Bungalows, pool, restaurant, and a skate bowl in Bali. Located near Sanur beach. We designed it all ourselves in harmony with it’s peaceful green environment. Open skateboarding sessions on weekends 3pm to 9pm. Reserved for our guest everyday. A place where you can Eat Sleep and Skate.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://essbali.com/"
+url: "http://essbali.com"
 github_url: "https://toybreaker.github.io/ess/"
 repository: toybreaker/ess
 instagram: eatsleepskatebali
