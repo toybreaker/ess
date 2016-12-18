@@ -1,9 +1,0 @@
-<div class="us group">
-  {% for image in site.static_files %}
-    {% if image.path contains 'p/us' %}
-      <figure class="small ">
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="We designed it all ourselves in harmony..." />
-      </figure>
-    {% endif %}
-  {% endfor %}
-</div>
