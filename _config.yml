@@ -8,22 +8,24 @@ whatsapp: +62 818 05620365
 address:  Jl. Sedap Malam, Gg. Kwangen 13, Banjar Bhuana Anyar, Sumerta Kelod, Denpasar Timur, Bali 80237
 short_address: Jl. Sedap Malam, Gg. Kwangen 13, Banjar Bhuana Anyar, Sanur.
 description: > # this means to ignore newlines until "baseurl:"
-  Wooden chalets, swimming pool, restaurant, and one of the most fun skateboarding bowls in Indonesia. Located 10 minutes from Sanur beach. We designed it all ourselves in harmony with it’s peaceful green environment. Open on weekends 4pm to 10pm. Reserved to our guest for the rest of the time. A place where you can Eat Sleep and Skate.
+  Bungalows, pool, restaurant, and a skate bowl in Bali. Located near Sanur beach. We designed it all ourselves in harmony with it’s peaceful green environment. Open skateboarding sessions on weekends 3pm to 9pm. Reserved for our guest everyday. A place where you can Eat Sleep and Skate.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://essbali.com"
-url: "https://toybreaker.github.io/ess/"
+url: "http://essbali.com/"
+github_url: "https://toybreaker.github.io/ess/"
 repository: toybreaker/ess
-instagram: https://www.instagram.com/eatsleepskatebali
+instagram: eatsleepskatebali
 instagram_tag: https://www.instagram.com/explore/tags/essbali
-facebook: https://www.facebook.com/essbali
-twitter: https://twitter.com/essbali
+facebook: essbali
+twitter: essbali
+twitter_creator: rokmatwit
 booking: http://booking.com/e682abb837ed8f61f
 tripadvisor: http://www.tripadvisor.com/Hotel_Review-g297700-d7732966-Reviews-Eat_Sleep_Skate-Sanur_Denpasar_Bali.html
+preview_image: /home/01-20161206_photo_rokma_MG_8406.jpg
 google:
-  youtube: https://www.youtube.com/channel/UCptyllNdDP7Cx_3wHwKU8-Q
+  youtube: UCptyllNdDP7Cx_3wHwKU8-Q
   analytics: UA-89049941-1
   maps: https://goo.gl/maps/pPpJSdKjMsn
-  verification:
+  verification: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 # instuff
 userId: '2946518376'
 clientId: 'ec2404a26b26481c93a9b8bd5f24363e'
