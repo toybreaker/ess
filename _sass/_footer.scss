@@ -3,7 +3,11 @@
   display: block;
   width: 100%;
   text-align: center;
-  h1 { text-transform: uppercase;}
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
   .container {
     min-height: 100vh;
     display: -webkit-box;
@@ -26,5 +30,9 @@
             align-items: center;
     -webkit-box-pack: start;
             justify-content: flex-start;
+  }
+  p.qr_paragraph,
+  p.copyright_paragraph {
+    justify-content: center;
   }
 }
