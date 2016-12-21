@@ -33,41 +33,48 @@
               {% if image.path contains 'p/home' %}
                 <figure class="slideshow-slide">
                   <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-
-                  <!-- {% for payoff in site.data.payoffs %}
-                    <figcaption>{{payoff.txt}}</figcaption>
-                  {% endfor %} -->
-
                 </figure>
               {% endif %}
             {% endfor %}
 
           </div>
 
-
-
         </div>
 
       </div>
 
+      <!--
       <div class="container content">
+        <div id="instafeed" class="instagram group"></div>
+      </div>
+      -->
+      <div class="events_call">
+        <div class="container content">
+          <a class="box" href="{{ site.baseurl }}/events/#pizza-fridays">
+            <h2>Pizza Fridays</h2>
+            <img src="{{ site.baseurl }}/assets/p/pizza/03.jpg" alt="At ESS Bali We make wood fired pizzas and have skate parties every Friday night!">
+          </a>
+          <a class="box" href="{{ site.baseurl }}/events/#skate-school">
+            <h2>Skate school</h2>
+            <img src="{{ site.baseurl }}/assets/p/school/03.jpg" alt="At ESS Bali we have a skate school: Private skate lessons for beginners and intermediate with experienced instructors.">
+          </a>
+        </div>
+      </div>
 
-        <!-- <div id="instafeed" class="instagram group"></div> -->
+      <div class="container content ratings">
 
-        <div class="box center_on_small">
+        <div class="box center">
           {% include svg/use.html id="icn--tripadvisor" class="tripadvisor" %}
           <p>Rated EXCELLENT 4.5 of 5</p>
         </div>
 
-        <div class="box center_on_small">
+        <div class="box center">
           {% include svg/use.html id="icn--bookingdotcom" class="bookingdotcom" %}
 
           <p>Rated EXCELLENT 8.7 of 10 <br>In 2015, the most booked in Sanur!</p>
         </div>
 
       </div>
-
-
 
       {% include footer.html %}
 

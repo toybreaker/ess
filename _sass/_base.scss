@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  /*overflow-x: hidden!important;*/
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -85,8 +85,6 @@ hr {
   border-bottom: 1px solid $black;
 }
 
-
-
 /*// Quotes*/
 blockquote {
   padding: 0;
@@ -99,16 +97,11 @@ blockquote {
   }
 }
 
-
 /*// All images... hum!*/
 img {
   display: block;
   max-width: 100%;
-  margin: .1rem auto;
-  /* opera mini issue here:*/
-  /* border-radius: $border-radius;*/
 }
-
 
 /*// Tables*/
 table {
@@ -147,8 +140,11 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   /*text-transform: capitalize;*/
   color: $black;
-  margin-bottom: 2rem;
+  margin-top: $vertical-space;
+  margin-bottom: $vertical-space-small;
+
 }
+
 h1 {
   font-size: 1.4rem;
   line-height: 2;
@@ -160,15 +156,15 @@ h1 {
   @include media( "screen", ">maxWidth") {font-size: 1.85rem;}
 }
 h2 {
-  margin-top: 1rem;
+  // margin-top: 2.5rem;
   font-size: 1.5rem;
 }
 h3 {
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem;
   font-size: 1.25rem;
 }
 h4, h5, h6 {
-  margin-top: 1rem;
+  // margin-top: 1rem;
   font-size: 1rem;
 }
 
@@ -217,6 +213,9 @@ h4, h5, h6 {
     max-width: 1000px;
     margin-top: $vertical-space*2;
   }
+}
+.center {
+  text-align: center;
 }
 
 .center_on_small {

@@ -14,16 +14,45 @@ em { color: lighten($black, 40%);}
   -webkit-box-direction: normal;
   flex-direction: column;
 }
-.small {
-  padding-bottom: .75rem;
-  padding-right: 0;
+
+.ratings,
+.events_call .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  @include media( "screen", ">bp1Width") {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
 }
 
-.events .small {
-  padding-right: .75rem;
-  @include media( "screen", ">bp1Width") {
-    padding-right: 0;
+
+.events_call {
+  background-color: rgba(0,0,0,.1);
+  padding-bottom: $vertical-space;
+  img {
+    max-width: 200px;
+    @include media( "screen", ">minWidth") {
+      max-width: 240px;
+    }
   }
+  .box {//a
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0 none;
+    &:hover {border: 0 none;}
+  }
+}
+
+.small {
+  padding: .25rem;
 }
 
 .skateschool,
@@ -40,7 +69,7 @@ em { color: lighten($black, 40%);}
     figure { max-width: 50%; }
   }
   @include media( "screen", ">bp1Width") {
-    figure { max-width: 32%; }
+    figure { max-width: 33.3%; }
   }
 }
 
@@ -50,7 +79,7 @@ em { color: lighten($black, 40%);}
     figure { max-width: 50%; }
   }
   @include media( "screen", ">bp1Width") {
-    figure { max-width: 24%; }
+    figure { max-width: 25%; }
   }
 }
 
@@ -62,12 +91,9 @@ em { color: lighten($black, 40%);}
 .us,
 .rooms {
    h2 {
-     margin-top: $vertical-space;
-     margin-bottom: $vertical-space-small;
      text-align: center;
    }
    .group {
-    /*  margin-top: $vertical-space-small;*/
      margin-bottom: $vertical-space-small;
    }
 }
@@ -79,7 +105,7 @@ em { color: lighten($black, 40%);}
   padding-right: 1rem;
   padding-right: 0;
   @include media( "screen", ">bp1Width") {
-      padding-right: 1rem;
+    padding-right: 1rem;
   }
 }
 .right {
@@ -87,7 +113,7 @@ em { color: lighten($black, 40%);}
   order: 2;
   padding-left: 0;
   @include media( "screen", ">bp1Width") {
-      padding-left: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -103,15 +129,6 @@ em { color: lighten($black, 40%);}
     align-items: center;
     p {
       max-width: 50%;
-    }
-  }
-
-  .rooms & {
-    figure {
-      @include media( "screen", ">bp1Width") {
-        padding-left: 1rem;
-        &:first-child { padding-left: 0;}
-      }
     }
   }
 }
@@ -140,12 +157,11 @@ em { color: lighten($black, 40%);}
 .white-gladak.flex {
   flex-wrap: wrap;
   figure {
-    padding-left: 0;
     @include media( "screen", ">bp1Width") {
-      width: 49%;
+      width: 50%;
     }
     @include media( "screen", ">maxWidth") {
-      width: 32%;
+      width: 33.3%;
     }
   }
 }
