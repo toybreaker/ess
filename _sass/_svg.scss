@@ -1,9 +1,4 @@
-.footer svg {
-  position: static;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
+
 
 .bookingdotcom {
   width: 180px;
@@ -24,7 +19,24 @@
   top:.5rem;
 }
 
-.footer .qr {
+
+
+.social_links svg {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+
+.footer svg,
+.us .footer svg {
+  position: static;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.ess_qr.paragraph .qr {
   width: 100px;
   height: 100px;
   margin: 0;

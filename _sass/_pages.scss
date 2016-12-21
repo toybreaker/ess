@@ -105,6 +105,7 @@ em { color: lighten($black, 40%);}
       max-width: 50%;
     }
   }
+
   .rooms & {
     figure {
       @include media( "screen", ">bp1Width") {
@@ -114,6 +115,27 @@ em { color: lighten($black, 40%);}
     }
   }
 }
+
+.social_links {
+  .flex a {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: 0 none;
+    opacity: 1;
+    &:hover { opacity: .7; }
+  }
+  p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
 
 .white-gladak.flex {
   flex-wrap: wrap;
