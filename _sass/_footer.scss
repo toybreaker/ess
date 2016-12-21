@@ -3,6 +3,11 @@
   display: block;
   width: 100%;
   text-align: center;
+  a { border: 0 none;}
+  a:hover {
+    border: 0 none;
+    opacity: .7;
+  }
   h1 {
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -10,6 +15,9 @@
   }
   .container {
     min-height: 100vh;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -21,6 +29,7 @@
     justify-content: center;
   }
   p {
+    margin-left: 0;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -30,9 +39,5 @@
             align-items: center;
     -webkit-box-pack: start;
             justify-content: flex-start;
-  }
-  p.ess_qr.paragraph,
-  p.copyright.paragraph {
-    justify-content: center;
   }
 }
