@@ -5,6 +5,7 @@ sitemap: false
 $body-color         : #fff;
 $black              : #161616;
 $link-color         : #000;
+$underline_link_color : #b4e7f8;
 
 $base-font: caption;
 $base-font-size-tiny: 14px;
@@ -32,4 +33,5 @@ $mediaMaxWidth: 1260px;
 @import "footer";
 @import "svg";
 @import "rooms";
+@import "instagram";
 @import "image-grid";// flex classes

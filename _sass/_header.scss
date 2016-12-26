@@ -5,7 +5,7 @@
   margin-top: 1rem;
   @include media( "screen", ">minWidth") {
     margin-top: 0;
-  }  
+  }
   .container {
     @include media( "screen", ">bp1Width"){
       display: -webkit-box;
@@ -84,6 +84,7 @@
   li {
     display: inline;
     a {
+      color: black;
       margin-right: 2vw;
       border-bottom: 2px solid transparent;
       white-space: nowrap;

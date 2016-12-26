@@ -1,12 +1,6 @@
 ---
 
 ---
-<!--
-{% assign instafeed_img = '{{image}}' %}
-{% assign instafeed_link = '{{link}}' %}
-{% assign instafeed_likes = '{{likes}}' %}
-{% assign instafeed_caption = '{{caption}}' %}
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,21 +37,24 @@
 
       </div>
 
-      <!--
-      <div class="container content">
-        <div id="instafeed" class="instagram group"></div>
-      </div>
-      -->
       <div class="events_call">
         <div class="container content">
+
+          <a class="box" href="{{ site.baseurl }}/events/#pizza-fridays">
+            <h2>Rooms</h2>
+            <img src="{{ site.baseurl }}/assets/p/rooms/joglo/01.jpg" alt="At ESS Bali We designed it all ourselves in harmony with it’s peaceful green environment.">
+          </a>
+
           <a class="box" href="{{ site.baseurl }}/events/#pizza-fridays">
             <h2>Pizza Fridays</h2>
             <img src="{{ site.baseurl }}/assets/p/pizza/03.jpg" alt="At ESS Bali We make wood fired pizzas and have skate parties every Friday night!">
           </a>
+
           <a class="box" href="{{ site.baseurl }}/events/#skate-school">
             <h2>Skate school</h2>
             <img src="{{ site.baseurl }}/assets/p/school/03.jpg" alt="At ESS Bali we have a skate school: Private skate lessons for beginners and intermediate with experienced instructors.">
           </a>
+
         </div>
       </div>
 
@@ -80,42 +77,7 @@
 
     </div>
 
-    <!-- <script type="text/javascript" src="{{ "/assets/j/instafeed.min.js" | prepend: site.url }}"></script> -->
-
-    <!-- <script type="text/javascript">
-      var userFeed = new Instafeed({
-          get: 'user',
-          userId: '{{site.userId}}',
-          clientId: '{{site.clientId}}',
-          accessToken: '{{site.accessToken}}',
-          sortBy: 'most-liked',
-          resolution: 'standard_resolution',
-          links: 'false',
-          target: 'instafeed',
-          template: '<img src="{{instafeed_img}}" />',
-          filter: function(image) {
-            return image.tags.indexOf('{{page.hash}}') >= 0;
-          }
-        });
-      userFeed.run();
-    </script> -->
-
-
     {% include script_slideshow.html %}
-
-    <script type="text/javascript">
-      var slideshowEl = document.querySelector('.slideshow');
-      Slideshow(slideshowEl, {
-        allowSwipe: true,
-        showIndicators: false,
-        autoplay: true,
-      	// infinite loop
-        loopSlides: true,
-        transitionEffect: "slide",
-      });
-    </script>
-
-
 
     {% include script_ext_link.html %}
 

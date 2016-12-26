@@ -10,6 +10,7 @@
         </svg>
         <span>Eating 9:00am > 9.00pm</span>
       </p>
+
       <p class="bowl_hours paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
           <use xlink:href="#icn--clock"></use>
@@ -21,25 +22,31 @@
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="money">
           <use xlink:href="#icn--money"></use>
         </svg>
-        <span>Skateboarding fee: 25.000 Rp. <br class="maybe">Includes water / soft drink. <br class="maybe">Free on Fridays! </span>
+        <span>Skateboarding fee: 25.000 Rp. <br class="maybe">Includes water / soft drink. <br class="maybe">Free on Fridays!</span>
+      </p>
+
+      <p class="pizza_hours paragraph">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="pizza">
+          <use xlink:href="#icn--pizza"></use>
+        </svg>
+        <span>Pizza. Friday from 6:00pm</span>
       </p>
 
       <p class="location paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
           <use xlink:href="#icn--location"></use>
         </svg>
-        <a href="{{ site.google.maps }}">
+
           <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">Jl. Sedap Malam, Gg. Kwangen 13,</span> <br class="maybe"><span itemprop="addressLocality">Sanur, Bali, Indonesia</span>
+            <a class="link-underline" href="{{ site.google.maps }}"><span itemprop="streetAddress">Jl. Sedap Malam, Gg. Kwangen 13,</span> <br class="maybe"><span itemprop="addressLocality">Sanur</span></a>
           </span>
-        </a>
       </p>
 
       <p class="email paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="email">
           <use xlink:href="#icn--email"></use>
         </svg>
-        <a href="mailto:{{ site.email }}">
+        <a class="link-underline" href="mailto:{{ site.email }}">
           <span itemprop="email">{{ site.email }}</span>
         </a>
       </p>
@@ -50,6 +57,7 @@
         </svg>
         <span itemprop="telephone">{{ site.telephone }}</span>
       </p>
+      
       <p class="handphone paragraph">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="handphone">
           <use xlink:href="#icn--handphone"></use>
@@ -64,7 +72,7 @@
       </p>
 
       <p class="copyright paragraph">
-        <span>© 2016 {{ site.title_short }}</span>
+        <span>© 2016 {{ site.title_short }}, Indonesia</span>
       </p>
     </div>
   </div>
