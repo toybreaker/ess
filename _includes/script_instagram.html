@@ -32,27 +32,32 @@
     if (supportsTemplate()) {
       var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
       mediaClone.querySelector('a').href = media[a].link;
-      
+
       mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url;
 
       if (media[a].caption !== null && media[a].caption.text !== null) {
         mediaClone.querySelector('.instagram-image').alt = media[a].caption.text;
 
       }
-//need to get rid of hastags, then can use...
-      // var caption = document.createElement("span");
-      //   caption.classList.add('instagram-caption');
-      //   caption.innerHTML = media[a].caption.text;
-      // mediaClone.querySelector('a').appendChild(caption);
+
+      var caption = document.createElement("span");
+        caption.classList.add('instagram-caption');
+        caption.textContent = media[a].caption.text.replace(/#rokmaphotography/g, 'Rokma. ').replace(/\s?#\S+/g, '').replace(/Link in bio for more info at essbali.com/, '').replace(/Link in bio for bookings at essbali.com/, '').replace(/Link in bio to find out more at essbali.com/, '').replace(/, more detail on link in bio/, '.').replace(/essbali.com/, '');
+
+      var caption_box = document.createElement('div');
+      caption_box.classList.add('instagram-caption-box');
+      caption_box.appendChild(caption);
+
+      mediaClone.querySelector('a').appendChild(caption_box);
 
       var likes = document.createElement("span");
         likes.classList.add('instagram-likes');
-        likes.innerHTML = media[a].likes.count;
+        likes.textContent = media[a].likes.count;
       mediaClone.querySelector('a').appendChild(likes);
 
       var comments = document.createElement("span");
         comments.classList.add('instagram-comments');
-        comments.innerHTML = media[a].comments.count;
+        comments.textContent = media[a].comments.count;
       mediaClone.querySelector('a').appendChild(comments);
 
       fragment.appendChild(mediaClone);

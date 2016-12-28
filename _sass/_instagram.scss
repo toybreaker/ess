@@ -27,7 +27,8 @@
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
+  align-items: center;
 
   a {
   	color: black;
@@ -127,17 +128,23 @@
 	content: "✎ ";
 }
 
-.instagram-caption {
+.instagram-caption-box {
   position: absolute;
   top: 0;
   left: 0;
-  line-height: 1.1;
-  font-size: 90%;
+  bottom: 2rem;
+  right: 0;
   padding: .5rem;
-  background-color: rgba(0,0,0,.75);
-  color: white;
+  background-color: rgba(255,255,255,.85);
+  color: black;
+  line-height: 1.1;
   display: none;
   a:hover & {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .instagram-caption {
+    max-width: 80%;
   }
 }
