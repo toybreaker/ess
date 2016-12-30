@@ -28,7 +28,7 @@
     fragment = document.createDocumentFragment();
 
   //get latest 10 posts
-  for (var a = 0, al = 10; a < al; a++) {
+  for (var a = 0, al = 12; a < al; a++) {
     if (supportsTemplate()) {
       var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
       mediaClone.querySelector('a').href = media[a].link;
