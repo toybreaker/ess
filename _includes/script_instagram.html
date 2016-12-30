@@ -33,7 +33,8 @@
       var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
       mediaClone.querySelector('a').href = media[a].link;
 
-      mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url;
+      // mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url;
+      mediaClone.querySelector('.instagram-image').src = media[a].images.thumbnail.url.replace('s150x150/', 's320x320/');
 
       if (media[a].caption !== null && media[a].caption.text !== null) {
         mediaClone.querySelector('.instagram-image').alt = media[a].caption.text;
