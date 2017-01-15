@@ -146,5 +146,9 @@
   }
   .instagram-caption {
     max-width: 80%;
+    font-size: 14px;
+    @include media( "screen", ">bp1Width") {
+      font-size: 17px;
+    }
   }
 }
