@@ -8,3 +8,15 @@
     }
   }
 }
+
+.fullWidthtoggler {
+  padding: 6px 10px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: $base-font-size-tiny;
+  line-height: 1;
+  &:hover {
+   cursor: pointer;
+ }
+}

@@ -1,10 +1,9 @@
 ---
-
 ---
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+  {% include head.html %}
 
   <body class="rooms">
 
@@ -18,27 +17,25 @@
 
         <div class="booking">
 
-            <a  href="http://booking.com/e682abb837ed8f61f">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="bookingdotcom">
+          <a href="http://booking.com/e682abb837ed8f61f">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="bookingdotcom">
                 <use xlink:href="#icn--bookingdotcom"></use>
               </svg>
-            </a>
-            <a class="floatleft" href="http://booking.com/e682abb837ed8f61f">Check availability and place your booking.</a>
+          </a>
+          <a class="floatleft" href="http://booking.com/e682abb837ed8f61f">Check availability and place your booking.</a>
 
         </div>
 
         <div class="roomsdetails">
 
-          <h2 id="barong">Barong</h2>
+          <h2 id="barong">Barong <span id="fullWidthtoggler_barong" class="fullWidthtoggler">see it big</span></h2>
 
-          <div class="barong flex">
-            {% for image in site.static_files %}
-              {% if image.path contains 'barong' %}
-                <figure class="small ">
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Barong room at Eat Sleep Skate Bali" />
-                </figure>
-              {% endif %}
-            {% endfor %}
+          <div id="barong_block" class="barong flex">
+            {% for image in site.static_files %} {% if image.path contains 'barong' %}
+            <figure class="small ">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="Barong room at Eat Sleep Skate Bali" />
+            </figure>
+            {% endif %} {% endfor %}
           </div>
 
           <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, 2 double beds and an en-suite bathroom with W.C., shower, and double basins. Perfect for small families or 2 couples.</p>
@@ -46,68 +43,61 @@
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
               <use xlink:href="#icn--people"></use>
-            </svg>
-            4
+            </svg> 4
           </p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
               <use xlink:href="#icn--store"></use>
-            </svg>
-            50sqm
+            </svg> 50sqm
           </p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="view">
               <use xlink:href="#icn--view"></use>
-            </svg>
-            Garden and Swimming pool
+            </svg> Garden and Swimming pool
           </p>
 
-          <h2 id="gladak">Gladak</h2>
+          <h2 id="gadlak">Gladak <span id="fullWidthtoggler_gadlak" class="fullWidthtoggler">see it big</span></h2>
 
-          <div class="gladak flex">
-            {% for image in site.static_files %}
-              {% if image.path contains 'brown-gladak' %}
-                <figure class="small ">
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Gladak room at Eat Sleep Skate Bali" />
-                </figure>
-              {% endif %}
-            {% endfor %}
+          <div id="gadlak_block" class="gladak flex">
+            {% for image in site.static_files %} {% if image.path contains 'brown-gladak' %}
+            <figure class="small ">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="Gladak room at Eat Sleep Skate Bali" />
+            </figure>
+            {% endif %} {% endfor %}
           </div>
 
           <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, a double bed and an en-suite bathroom with W.C., shower, and basins.</p>
 
           <p>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
-  <use xlink:href="#icn--people"></use>
-</svg>
-   2</p>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
+            <use xlink:href="#icn--people"></use>
+          </svg> 2
+          </p>
 
           <p>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
-    <use xlink:href="#icn--store"></use>
-  </svg>
-   35-40sqm / 375-430sqf</p>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
+            <use xlink:href="#icn--store"></use>
+          </svg> 35-40sqm / 375-430sqf</p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="view">
               <use xlink:href="#icn--view"></use>
-            </svg>
-            Garden and Swimming pool
+            </svg> Garden and Swimming pool
           </p>
 
 
-          <h2 id="white-gladak">White Gladak</h2>
+            <h2 id="white-gadlak">White Gladak <span id="fullWidthtoggler_whitegadlak" class="fullWidthtoggler">see it big</span>
+          </h2>
 
-          <div class="white-gladak flex">
-            {% for image in site.static_files %}
-              {% if image.path contains 'white-gladak' %}
-                <figure class="small ">
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="White Gladak room at Eat Sleep Skate Bali" />
-                </figure>
-              {% endif %}
-            {% endfor %}
+
+          <div id="whitegadlak_block" class="white-gladak flex">
+            {% for image in site.static_files %} {% if image.path contains 'white-gladak' %}
+            <figure class="small ">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="White Gladak room at Eat Sleep Skate Bali" />
+            </figure>
+            {% endif %} {% endfor %}
           </div>
 
           <p>A traditional wooden chalet with terrace overlooking tropical garden and swimming pool, with 2 twin beds and an en-suite bathroom with W.C., shower, and basins.</p>
@@ -115,55 +105,50 @@
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
               <use xlink:href="#icn--people"></use>
-            </svg>
-            2
+            </svg> 2
           </p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
               <use xlink:href="#icn--store"></use>
-            </svg>
-            35-40sqm / 375-430sqf
+            </svg> 35-40sqm / 375-430sqf
           </p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="view">
               <use xlink:href="#icn--view"></use>
-            </svg>
-            Garden and Swimming pool
+            </svg> Garden and Swimming pool
           </p>
 
-          <h2 id="joglo">Joglo</h2>
+          <h2 id="joglo">Joglo <span id="fullWidthtoggler_joglo" class="fullWidthtoggler">see it big</span>
+        </h2>
 
-          <div class="joglo flex">
-            {% for image in site.static_files %}
-              {% if image.path contains 'joglo' %}
-                <figure class="small ">
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="Joglo room at Eat Sleep Skate Bali" />
-                </figure>
-              {% endif %}
-            {% endfor %}
+
+          <div id="joglo_block" class="joglo flex">
+            {% for image in site.static_files %} {% if image.path contains 'joglo' %}
+            <figure class="small ">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="Joglo room at Eat Sleep Skate Bali" />
+            </figure>
+            {% endif %} {% endfor %}
           </div>
 
           <p>A traditional wooden house with terrace overlooking tropical garden and swimming pool, a double bed, a sofa/daybed and an en suite bathroom with W.C, shower, and double basins. Perfect for 1 person.</p>
 
           <p>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="people">
   <use xlink:href="#icn--people"></use>
-</svg>
-   3</p>
+</svg> 3
+          </p>
 
           <p>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="store">
     <use xlink:href="#icn--store"></use>
-  </svg>
-   50sqm / 162sqf</p>
+  </svg> 50sqm / 162sqf</p>
 
           <p>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="view">
               <use xlink:href="#icn--view"></use>
-            </svg>
-            Garden and Swimming pool
+            </svg> Garden and Swimming pool
           </p>
         </div>
 
@@ -217,18 +202,21 @@
             </span>
           </p>
 
-          <p>Our guests can use the bowl everyday with no need to pay the skateboarding fee. If you want your kid to have private <a class="link-underline" href="{{ site.baseurl }}/events/#skate-school">skateboarding lessons</a> you can! We offer a skate school for beginners and intermediate with experienced instructors.</p>
+          <p>Our guests can use the bowl everyday with no need to pay the skateboarding fee. If you want your kid to have private <a class="link-underline" href="{{ site.baseurl }}/events/#skate-school">skateboarding lessons</a> you can! We offer a skate
+            school for beginners and intermediate with experienced instructors.</p>
 
 
           <h2 id="deposit-and-payment-policy">Deposit and Payment Policy</h2>
 
-          <p>We do not require a deposit, only a booking guarantee. The credit card details, you are asked to enter during the booking procedure, are used for the booking guarantee. However nothing will charged to your account at the booking stage. Full payment will happen at check-out at the resort. We accept Visa, MasterCard or cash payment.</p>
+          <p>We do not require a deposit, only a booking guarantee. The credit card details, you are asked to enter during the booking procedure, are used for the booking guarantee. However nothing will charged to your account at the booking stage. Full
+            payment will happen at check-out at the resort. We accept Visa, MasterCard or cash payment.</p>
 
           <p>Room rates are subject to change without prior notification, confirmed reservations will not be affected.</p>
 
           <h2 id="cancellation-policy">Cancellation Policy</h2>
 
-          <p>Free cancellation must be received within 14 days, or more, prior to arrival (depending on the rate plan booked). If the reservation is cancelled closer to the arrival date, 100% of the first night will be charged (depending on the rate plan booked). In case of a no-show, a cancellation fee, equal to the number of nights cancelled, will be charged.</p>
+          <p>Free cancellation must be received within 14 days, or more, prior to arrival (depending on the rate plan booked). If the reservation is cancelled closer to the arrival date, 100% of the first night will be charged (depending on the rate plan
+            booked). In case of a no-show, a cancellation fee, equal to the number of nights cancelled, will be charged.</p>
 
 
         </div>
@@ -240,6 +228,10 @@
     </div>
 
     {% include script_ext_link.html %}
+    {% include script_toggle_barong.html %}
+    {% include script_toggle_gadlak.html %}
+    {% include script_toggle_joglo.html %}
+    {% include script_toggle_whitegadlak.html %}
 
     {% include script_google_analytics.html %}
 

@@ -127,6 +127,12 @@ em { color: lighten($black, 40%);}
     justify-content:space-between;
     -webkit-box-align: center;
     align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    &.full_width {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
     p {
       max-width: 50%;
     }
@@ -149,19 +155,5 @@ em { color: lighten($black, 40%);}
   p {
     margin-left: 0;
     margin-right: 0;
-  }
-}
-
-
-
-.white-gladak.flex {
-  flex-wrap: wrap;
-  figure {
-    @include media( "screen", ">bp1Width") {
-      width: 50%;
-    }
-    @include media( "screen", ">maxWidth") {
-      width: 33.3%;
-    }
   }
 }
