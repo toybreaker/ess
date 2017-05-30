@@ -157,3 +157,10 @@ em { color: lighten($black, 40%);}
     margin-right: 0;
   }
 }
+
+
+.maybehide {
+  @include media( "screen", "<bp1Width"){
+    display: none;
+  }
+}
