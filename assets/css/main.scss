@@ -6,6 +6,7 @@ $body-color         : #fff;
 $black              : #161616;
 $link-color         : #000;
 $underline_link_color : #b4e7f8;
+$blue: hsla(208, 100%, 60%, 1);
 
 $base-font: caption;
 $base-font-size-tiny: 14px;
@@ -23,15 +24,18 @@ $mediaBp1Width: 800px;
 $mediaMaxWidth: 1260px;
 
 // $ettings
-
-@import "cmq";
-@import "base";
-@import "pages";
-@import "header";
-@import "slideshow";
-@import "thumbs";
-@import "footer";
-@import "svg";
-@import "rooms";
-@import "instagram";
-@import "image-grid";// flex classes
+@import
+"cmq",
+"base",
+"pages",
+"header",
+"menu",
+"slideshow",
+"thumbs",
+"footer",
+"svg",
+"rooms",
+"instagram",
+"buttons",
+"image-grid"// flex classes
+;

@@ -5,70 +5,57 @@
       <h1 itemprop="name">{{ site.title }}</h1>
 
       <p class="resto_hours paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
-          <use xlink:href="#icn--clock"></use>
-        </svg>
+        {% include svg/use.html id="icn--clock" class="clock" %}
         <span>Eating 9:00am > 9.00pm</span>
       </p>
 
       <p class="bowl_hours paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="clock">
-          <use xlink:href="#icn--clock"></use>
-        </svg>
+        {% include svg/use.html id="icn--clock" class="clock" %}
         <span>Skateboarding 9:00am > 9.00pm <br class="maybe">(sometimes later on good sessions)</span>
       </p>
 
       <p class="bowl_fee paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="money">
-          <use xlink:href="#icn--money"></use>
-        </svg>
+        {% include svg/use.html id="icn--money" class="money" %}
         <span>Skateboarding fee: 25.000 Rp. <br class="maybe">Includes water / soft drink. <br class="maybe">Free on Fridays!</span>
       </p>
 
       <p class="pizza_hours paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="pizza">
-          <use xlink:href="#icn--pizza"></use>
-        </svg>
+        {% include svg/use.html id="icn--pizza" class="pizza" %}
         <span>Pizza. Friday from 6:00pm</span>
       </p>
 
       <p class="location paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="location">
-          <use xlink:href="#icn--location"></use>
-        </svg>
-
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <a class="link-underline" href="{{ site.google.maps }}"><span itemprop="streetAddress">Jl. Sedap Malam, Gg. Kwangen 13,</span> <br class="maybe"><span itemprop="addressLocality">Sanur</span></a>
-          </span>
+        {% include svg/use.html id="icn--location" class="location" %}
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <a class="link-underline" href="{{ site.google.maps }}"><span itemprop="streetAddress">Jl. Sedap Malam, Gg. Kwangen 13,</span> <br class="maybe"><span itemprop="addressLocality">Sanur</span></a>
+        </span>
       </p>
 
       <p class="email paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="email">
-          <use xlink:href="#icn--email"></use>
-        </svg>
+        {% include svg/use.html id="icn--email" class="email" %}
         <a class="link-underline" href="mailto:{{ site.email }}">
           <span itemprop="email">{{ site.email }}</span>
         </a>
       </p>
 
       <p class="localphone paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="localphone">
-          <use xlink:href="#icn--localphone"></use>
-        </svg>
-        <span itemprop="telephone">{{ site.telephone }}</span>
+        {% include svg/use.html id="icn--localphone" class="localphone" %}
+        <span itemprop="telephone">{{ site.booking_phone }} Booking</span>
+      </p>
+
+
+      <p class="localphone paragraph">
+        {% include svg/use.html id="icn--localphone" class="localphone" %}
+        <span itemprop="telephone">{{ site.telephone }} Front desk</span>
       </p>
 
       <p class="handphone paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="handphone">
-          <use xlink:href="#icn--handphone"></use>
-        </svg>
+        {% include svg/use.html id="icn--handphone" class="handphone" %}
         <span itemprop="telephone">{{ site.handphone }}</span>
       </p>
 
       <p class="ess_qr paragraph">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="qr">
-          <use xlink:href="#icn--QRessbalicom"></use>
-        </svg>
+        {% include svg/use.html id="icn--QRessbalicom" class="qr" %}
       </p>
 
       <p class="copyright paragraph">

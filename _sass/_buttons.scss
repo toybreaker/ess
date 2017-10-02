@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  background-color: $blue;
+  border-radius: 3px;
+
+  &:active,
+  &:hover {
+    background-color: darken($blue, 10);
+  }
+
+  a {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: white;
+
+    &:active,
+    &:hover {
+      border-bottom: 2px solid transparent;
+    }
+  }
+}
+p.button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
