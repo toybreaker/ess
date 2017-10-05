@@ -158,6 +158,25 @@ em { color: lighten($black, 40%);}
   }
 }
 
+.dormitory {
+  @include media( "screen", ">bp1Width") {
+    &.flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        min-width: 140px;
+        max-width: 140px;
+      }
+      &.full_width {
+        img {
+          min-width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
 
 .maybehide {
   @include media( "screen", "<bp1Width"){

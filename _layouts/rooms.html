@@ -116,6 +116,32 @@
 
         </div>
 
+        <div class="section roomsdetails group">
+
+          <h2 id="dormitory">Bunk beds villa <span id="fullWidthtoggler_dormitory" class="fullWidthtoggler">see it big</span>
+          </h2>
+
+
+          <div id="dormitory_block" class="dormitory flex">
+            {% for image in site.static_files %} {% if image.path contains 'dormitory' %}
+            <figure class="small ">
+              <img src="{{ site.baseurl }}{{ image.path }}" alt="Bunk beds villa at Eat Sleep Skate Bali" />
+            </figure>
+            {% endif %} {% endfor %}
+          </div>
+
+          <p>A gorgeous tropical villa with smimming pool, complete with fully equiped kitchen and a huge living room with TV. Upstairs 6 bunk beds in 2 shared rooms. Each room has lockers and bathroom. Perfect for 1 person or backpackers.</p>
+
+          <p>{% include svg/use.html id="icn--people" class="people" %} 12</p>
+
+          <p>{% include svg/use.html id="icn--store" class="store" %} 200sqm / 600sqf</p>
+
+          <p>{% include svg/use.html id="icn--view" class="view" %} Garden, Swimming pool and bowl.</p>
+
+          <p class="button"><a href="{{site.booking_link}}">Book a bed</a></p>
+
+        </div>
+
         <div class="section bookingdetails group">
 
           <h2 id="checking-in-and-out">Checking In and Out</h2>
@@ -205,6 +231,8 @@
     {% include script_toggle_joglo.html %}
 
     {% include script_toggle_whitegadlak.html %}
+
+    {% include script_toggle_dormitory.html %}
 
     {% include script_google_analytics.html %}
 

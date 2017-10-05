@@ -9,8 +9,12 @@
   }
 
   a {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    @include media( "screen", ">bp1Width") {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     color: white;
 
     &:active,
