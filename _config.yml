@@ -33,9 +33,9 @@ booking_link: https://www.beds24.com/booking.php?propid=39641&referer=EatSleepSk
 newsletter_link: http://eepurl.com/cHnYk1
 
 # instuff
-userId: '2946518376'
-clientId: 'ec2404a26b26481c93a9b8bd5f24363e'
-accessToken: '2946518376.ec2404a.37bf765fa57343a380feeb950c0d31b6'
+userId: '1642269704'
+clientId: 'bfa7b626c0a644d99cb87002b24b3765'
+accessToken: '1642269704.bfa7b62.e7ddecba818e4f7eaf28862aea5acb1c'
 
 # Build settings
 markdown: kramdown
