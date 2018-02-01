@@ -56,9 +56,10 @@
   .media {
     padding: 4px;
     position: relative;
-    @media all and (min-width: 480px) {
-      width: 45%;
-      margin: 2.5%;
+    @include media("screen", ">minWidth") {
+      width: 45vw;
+      height: 45vw;
+      //margin: 2.5%;
       float: left;
     }
     @media all and (min-width: 840px) {
@@ -106,8 +107,11 @@
       @include media("screen", ">minWidth") {
         padding-right: 0;
         padding-left: 0;
+        width: 45vw;
+        height: 45vw;
       }
     }
+
 
     .user {
       width: 48px;
