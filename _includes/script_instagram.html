@@ -33,14 +33,11 @@
   			var mediaClone = document.querySelector('#instagram-' + media[a].type).content.cloneNode(true);
   			mediaClone.querySelector('a').href = media[a].link;
 
-
   			mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url;
 
   			//var thumbnail = post.images.thumbnail.url.replace('s150x150/', 's320x320/');
 
   			//mediaClone.querySelector('.instagram-image').src = media[a].images.low_resolution.url.replace('p320x320', 'p640x640');
-
-
 
   			//mediaClone.querySelector('.instagram-image').src = media[a].images.standard_resolution.url;
 
@@ -49,15 +46,21 @@
 
   			}
 
-  			var likes = document.createElement("span");
+        // create container for metas: likes and comments counts.
+        var metas = document.createElement("div");
+          metas.classList.add('instagram-metas');
+          metas.classList.add('group');
+  			mediaClone.querySelector('.instagram-out-link').appendChild(metas);
+
+  			var likes = document.createElement("div");
   				likes.classList.add('instagram-likes');
   				likes.innerHTML = media[a].likes.count;
-  			mediaClone.querySelector('a').appendChild(likes);
+  			mediaClone.querySelector('.instagram-metas').appendChild(likes);
 
-  			var comments = document.createElement("span");
+  			var comments = document.createElement("div");
   				comments.classList.add('instagram-comments');
   				comments.innerHTML = media[a].comments.count;
-  			mediaClone.querySelector('a').appendChild(comments);
+  			mediaClone.querySelector('.instagram-metas').appendChild(comments);
 
   			fragment.appendChild(mediaClone);
   		} else {
@@ -65,15 +68,16 @@
   			mediaElement.className = 'media ' + media[a].type;
 
   			var linkElement = document.createElement('a');
-  			linkElement.href = media[a].link;
-  			linkElement.target = '_blank';
+          linkElement.classList.add('instagram-link');
+    			linkElement.href = media[a].link;
+    			linkElement.target = '_blank';
   			if (media[a].caption !== null && media[a].caption.text !== null) {
   				linkElement.title = media[a].caption.text;
   			}
   			mediaElement.appendChild(linkElement);
 
   			var imageElement = document.createElement('img');
-  			imageElement.src = media[a].images.low_resolution.url;
+  			   imageElement.src = media[a].images.low_resolution.url;
   			if (media[a].caption !== null && media[a].caption.text !== null) {
   				imageElement.alt = media[a].caption.text;
   			}

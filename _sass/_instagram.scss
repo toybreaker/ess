@@ -47,24 +47,33 @@
   -ms-flex-align: center;
   align-items: center;
 
-  a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 0 none;
+  .instagram-image-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .instagram-out-link {
+    //a
+    display: flex;
+    flex-direction: column;
   }
 
   .media {
-    padding: 4px;
+    margin: 0 1rem;
     position: relative;
     @include media("screen", ">minWidth") {
-      width: 45vw;
-      height: 45vw;
-      //margin: 2.5%;
+      min-width: 42vw;
+      min-height: calc(42vw + 3rem);
+      overflow: hidden;
       float: left;
+      margin-bottom: 0.5rem;
     }
-    @media all and (min-width: 840px) {
-      width: 28.3334%;
-      margin: 2.5%;
+    @include media("screen", ">maxWidth") {
+      // width: 28.3334%;
+      // margin: 2.5%;
+      min-width: 30vw;
+      min-height: calc(30vw + 3rem);
     }
 
     &.video a:after,
@@ -97,7 +106,8 @@
       margin-left: -5px;
     }
 
-    img {
+    .instagram-image {
+      //img
       width: 100%;
       height: auto;
       vertical-align: middle;
@@ -107,11 +117,17 @@
       @include media("screen", ">minWidth") {
         padding-right: 0;
         padding-left: 0;
-        width: 45vw;
-        height: 45vw;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        //partial centering
+        top: -8%;
       }
     }
-
 
     .user {
       width: 48px;
@@ -141,8 +157,32 @@
   outline: none;
 }
 
-.instagram-likes {
-  padding-right: 10px;
+.instagram-metas {
+  //position: absolute;
+  //bottom: 0;
+  //padding-right: 10px;
+  //text-align: center;
+  //padding-bottom: 2px;
+  //width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  padding-top: 2px;
+  display: flex;
+  background-color: white;
+  height: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+
+
+  div {
+    // max-width: 50%;
+    // min-width: 50%;
+    // float: left;
+    padding-right: 20px;
+    text-align: center;
+  }
 }
 
 .instagram-likes:before {
